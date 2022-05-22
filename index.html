@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="body">
+    <div class="loading" id="loading">
+      <img src="https://img.idesign.vn/2018/10/23/id-loading-1.gif" />
+    </div>
+    <div class="cart" id="cart">
+      <div class="cart-toggle">
+        <div class="opening" onclick="toggleCart()">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <div class="quantity">0</div>
+        </div>
+        <div class="closing" onclick="toggleCart()">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="cart-main">
+        <div class="cart-header">
+          <div>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <div class="quantity">0</div>
+          </div>
+          <h3>Cart</h3>
+        </div>
+        <div class="cart-body">
+          <p>Add some products in the cart<br>:)</p>
+        </div>
+        <div class="cart-footer">
+          <div class="footer-up">
+            <label>SUBTOTAL</label>
+            <div class="parameters">
+              <h2 id="total">$ 0.00</h2>
+              <label id="or-total"></label>
+            </div>
+          </div>
+          <div class="button">
+            <button type="submit" onclick="submitProduct()">CHECKOUT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <div class="filter-box">
+              <div class="sizes">
+                <h3>Sizes:  </h3>
+                <div class="d-flex">
+                  <div class="size-item" data-size="X"><span>X</span></div>
+                  <div class="size-item" data-size="XS"><span>XS</span></div>
+                  <div class="size-item" data-size="S"><span>S</span></div>
+                  <div class="size-item" data-size="M"><span>M</span></div>
+                  <div class="size-item" data-size="ML"><span>ML</span></div>
+                  <div class="size-item" data-size="L"><span>L</span></div>
+                  <div class="size-item" data-size="XL"><span>XL</span></div>
+                  <div class="size-item" data-size="XXL"><span>XXL</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="products">  
+              <div class="gross_total" id="gross_total"></div>
+              <div class="items" id="items"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="index.js"></script>
+</body>
+</html>
